@@ -5,7 +5,7 @@
 set -e
 set -o pipefail
 
-RUBY_VERSION=$(cat docs/.ruby-version)
+RUBY_VERSION=$(cat .ruby-version)
 echo "Installing Ruby ${RUBY_VERSION}"
 rvm install "${RUBY_VERSION}"
 rvm alias create default "ruby-${RUBY_VERSION}"
