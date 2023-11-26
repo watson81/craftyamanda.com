@@ -5,23 +5,36 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Crafty Amanda
-# email: your-email@example.com
+# A short tagline that appears below the title in site masthead.
+# subtitle:
 name: &name Amanda Watson
+email: amanda@craftyamanda.com
 description: &description >- # this means to ignore newlines until the next YAML element
   A carefully compiled compendium of crafty components
+# logo: "/assets/images/logo-88x88.png"
+# For pages that don’t have a header.image assigned in their YAML Front Matter, site.og_image will be used as a
+# fallback during social sharing. Use your logo, icon, avatar or something else that is meaningful. Just make sure it
+# is placed in the /assets/images/ folder, has a minimum size of 120px by 120px, and is less than 1MB in file size.
+# og_image: /assets/images/site-logo.png
 # twitter_username: username
 # github_username: username
 minimal_mistakes_skin: default
 search: true
-# baseurl: "" # the subpath of your site, e.g. /blog
 domain: www.craftyamanda.com
 url: "https://www.craftyamanda.com" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+
+# social:
+#   type:  # Person or Organization (defaults to Person)
+#   name:  # If the user or organization name differs from the site's name
+#   links:
+#     - "https://twitter.com/yourTwitter"
+#     - "https://www.facebook.com/yourFacebook"
+#     - "https://instagram.com/yourProfile"
+#     - "https://www.linkedin.com/in/yourprofile"
 
 # Build settings
 markdown: kramdown
-#theme: minima
-#remote_theme: pages-themes/slate@v0.2.0
-#remote_theme: pages-themes/cayman@v0.2.0
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Outputting
 permalink: /:categories/:title/
@@ -70,31 +83,20 @@ author:
   name   : *name
   avatar : "/assets/images/bio-photo.jpg"
   bio    : *description
+  location: Atlanta
   links:
-    - label: "Patrick's Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.patrickwatson.org"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "amanda@craftyamanda.com"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:amanda@craftyamanda.com"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/watson81/craftyamanda.com"
+    - label: "Patrick's Website"
+      icon: "fas fa-fw fa-user-cog"
+      url: "https://www.patrickwatson.org"
 
 defaults:
   # _posts
@@ -105,9 +107,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -115,6 +118,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      show_date: true
 
 category_archive:
   type: liquid
