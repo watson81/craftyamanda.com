@@ -68,8 +68,6 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE
-  - "*.sh"
-  - dev.env
 
 plugins:
   - jekyll-paginate
