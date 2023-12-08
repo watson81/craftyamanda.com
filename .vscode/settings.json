@@ -1,3 +1,4 @@
 {
-    "rubyLsp.rubyVersionManager": "rvm"
+    "rubyLsp.rubyVersionManager": "rvm",
+    "jekyll-run.commandLineArguments": "--drafts"
 }
