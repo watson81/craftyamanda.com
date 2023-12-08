@@ -12,13 +12,15 @@ feature_row:
     url: "https://www.facebook.com/events/340281321898831"
     btn_label: "Facebook"
     btn_class: "btn--info"
+excerpt: "Artists will be selling their handcrafted items alongside live music and food trucks."
 ---
 
 Free Event!
 {: .text-center}
 {: .notice--info}
 
-Children and Adult artists of all ages will be selling their handcrafted items.  There will be live music and food trucks.  10% of proceeds go to support some of the local Atlanta Public Schools.
+Children and Adult artists of all ages will be selling their handcrafted items. There will be live music and food
+trucks. 10% of proceeds go to support some of the local Atlanta Public Schools.
 
 # Details
 
