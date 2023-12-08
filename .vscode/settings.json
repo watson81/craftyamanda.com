@@ -1,4 +1,7 @@
 {
     "rubyLsp.rubyVersionManager": "rvm",
-    "jekyll-run.commandLineArguments": "--drafts"
+    "jekyll-run.commandLineArguments": "--drafts",
+    "editor.rulers": [
+        120
+    ]
 }
